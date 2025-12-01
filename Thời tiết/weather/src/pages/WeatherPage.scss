@@ -1,0 +1,113 @@
+$bg-gradient: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+
+$card-bg: rgba(255, 255, 255, 0.9);
+
+$text-color: #333;
+
+.weather-app-container {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 100vh;
+
+  background: $bg-gradient;
+
+  padding: 20px;
+
+  .weather-card {
+    width: 100%;
+
+    max-width: 400px;
+
+    background-color: $card-bg;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+
+    backdrop-filter: blur(5px); // Hiệu ứng kính mờ
+
+    .search-box {
+      margin-bottom: 20px;
+
+      display: flex;
+
+      gap: 10px;
+    }
+
+    .weather-info {
+      .city-name {
+        font-size: 1.5rem;
+
+        font-weight: bold;
+
+        color: #28885f;
+
+        margin-bottom: 5px;
+      }
+
+      .temp {
+        font-size: 4rem;
+
+        font-weight: 800;
+
+        color: $text-color;
+
+        margin: 10px 0;
+      }
+
+      .description {
+        text-transform: capitalize;
+
+        font-size: 1.2rem;
+
+        color: #000000;
+
+        margin-bottom: 20px;
+      }
+
+      .icon-weather {
+        width: 100px;
+
+        height: 100px;
+      }
+
+      .details {
+        display: flex;
+
+        justify-content: space-around;
+
+        margin-top: 20px;
+
+        padding-top: 20px;
+
+        border-top: 1px solid #ddd;
+
+        .col {
+          display: flex;
+
+          flex-direction: column;
+
+          align-items: center;
+
+          span {
+            font-size: 0.9rem;
+
+            color: #030303;
+          }
+
+          strong {
+            font-size: 1.1rem;
+
+            color: #a40c0c;
+          }
+        }
+      }
+    }
+  }
+}
